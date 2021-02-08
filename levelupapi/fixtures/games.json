@@ -1,0 +1,13 @@
+[
+    {
+        "model": "levelupapi.games",
+        "pk": 1,
+        "fields": {
+            "gamer": 1,
+            "gametype": 1,
+            "title": "chess",
+            "description": "10 minuts game",
+            "number_of_players": 2
+        }
+    }
+]
