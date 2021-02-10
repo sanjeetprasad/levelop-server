@@ -25,7 +25,7 @@ class Gameview(ViewSet):
         # Create a new Python instance of the Game class
         # and set its properties from what was sent in the
         # body of the request from the client.
-        game = Game()
+        game = Games()
         game.title = request.data["title"]
         game.maker = request.data["maker"]
         game.number_of_players = request.data["numberOfPlayers"]
