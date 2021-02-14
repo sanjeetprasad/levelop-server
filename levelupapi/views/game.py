@@ -105,12 +105,12 @@ class Gameview(ViewSet):
             Response -- 200, 404, or 500 status code
         """
         try:
-            game = Game.objects.get(pk=pk)
+            game = Games.objects.get(pk=pk)
             game.delete()
 
             return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-        except Game.DoesNotExist as ex:
+        except Games.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
         except Exception as ex:
